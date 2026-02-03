@@ -46,7 +46,7 @@
   </div>
   
    
- <audio id="audio" src="./musica/"></audio>
+ <audio id="audio" src="./Soda Stereo - Entre Caníbales (Official Visualizer) [4OvhrzXu4Yo].mp3"></audio>
 
 <div class="music-player" id="player">
   <button class="play-btn" id="playBtn">►</button>
@@ -269,7 +269,20 @@ Nombre: Mayco Daniel Colombano</p>
 
 
 
+<script>
+  const audio = document.getElementById("audio");
+  const playBtn = document.getElementById("playBtn");
 
+  playBtn.addEventListener("click", () => {
+    if (audio.paused) {
+      audio.play();
+      playBtn.textContent = "❚❚"; // pausa
+    } else {
+      audio.pause();
+      playBtn.textContent = "►"; // play
+    }
+  });
+</script>
 
   <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
