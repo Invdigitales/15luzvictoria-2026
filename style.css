@@ -123,6 +123,7 @@
   background: #c69086b3;
   border-radius: 50%;
   display: flex;
+  margin-left: 50%;
   justify-content: center;
   align-items: center;
   cursor: pointer;
@@ -132,7 +133,7 @@
   /* Fijar arriba */
   position: fixed;
   top: 20px;   /* distancia desde arriba */
-  right: 20px; /* lo mantiene a la derecha */
+  right: 70px; /* lo mantiene a la derecha */
   z-index: 9999; /* asegura que quede por encima de todo */
   
   }
@@ -146,6 +147,7 @@
     border: none;
     outline: none;
     cursor: pointer;
+  
   }
   
    /* Animación de flotación */
